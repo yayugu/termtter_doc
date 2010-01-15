@@ -18,16 +18,16 @@ termtterの実行ファイルは /usr/bin にあるようです。
 
 * update, u TEXT
 メッセージを投稿します。
-  > &rt; u こんにちは！こんにちは！
+    > u こんにちは！こんにちは！
 
 * reply, re (@USERNAME or STATUS_ID) TEXT
 replyを送信します。
-  > &rt; re @yayugu Hi!
-  > =&rt; @yayugu Hi!
+    > re @yayugu Hi!
+    => @yayugu Hi!
 
-  > (23:08:57) [$br] yayugu: @yayugu Hii!  (reply_to [$bs]) Termtter
+    (23:08:57) [$br] yayugu: @yayugu Hii!  (reply_to [$bs]) Termtter
 
 このようにreplyを送りたい人のtweetがあるときには、以下のように記述することもできます。
 
-  > &lt; re $br hoge
-  > replied =%lt; @yayugu hoge
+    > re $br hoge
+    > replied => @yayugu hoge
