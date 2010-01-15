@@ -4,14 +4,15 @@
 rubyをインストールします。
 
 2. termtterをinstall
-> % sudo gem install termtter
+    > % sudo gem install termtter
 
 3. 実行
-> % termtter
+    > % termtter
 termtterの実行ファイルは /usr/bin にあるようです。
 
 
 # 使い方
+
 ほうって置くとhome_timelineが流れてきます。
 操作をするにはコマンドを入力。
 コマンドが長いときには短い別名が用意されてることが多いです。
@@ -20,6 +21,7 @@ termtterの実行ファイルは /usr/bin にあるようです。
 メッセージを投稿します。
 
     > u こんにちは！こんにちは！
+
 
 * reply, re (@USERNAME or STATUS_ID) TEXT
 replyを送信します。
@@ -33,3 +35,38 @@ replyを送信します。
 
     > re $br hoge
     replied => @yayugu hoge
+
+
+* retweet, rt (@USERNAME or STATUS_ID) TEXT 
+retweetします。
+
+    (10/01/15 23:45) [$wf] yayugu: hogefoobar Termtter
+
+この投稿にRTするには以下のようにします。
+
+    > rt $wf barbaz
+    => barbaz RT @yayugu: hogefoobar
+
+STATUS_IDのかわりに@USENAMEとすると指定したユーザの最新のtweetに対してRTします。
+TEXTは省略できます。省略すると空RTになります。
+
+
+# 設定
+
+設定は
+~./.termtter/config
+というファイルを編集して行います。
+
+* デフォルトのユーザ名、パスワードの設定
+    config.user_name = 'USERNAME'
+    config.password = 'PASSWORD'
+
+* timelineの取得頻度
+例：70秒更新にする場合
+    config.update_interval = 70
+
+
+
+
+
+
