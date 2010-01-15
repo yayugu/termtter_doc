@@ -18,10 +18,12 @@ termtterの実行ファイルは /usr/bin にあるようです。
 
 * update, u TEXT
 メッセージを投稿します。
+
     > u こんにちは！こんにちは！
 
 * reply, re (@USERNAME or STATUS_ID) TEXT
 replyを送信します。
+
     > re @yayugu Hi!
     => @yayugu Hi!
 
@@ -30,4 +32,4 @@ replyを送信します。
 このようにreplyを送りたい人のtweetがあるときには、以下のように記述することもできます。
 
     > re $br hoge
-    > replied => @yayugu hoge
+    replied => @yayugu hoge
