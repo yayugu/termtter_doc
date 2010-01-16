@@ -1,4 +1,6 @@
-# Termtterのinstall
+=begin rdoc
+
+= Termtterのinstall
 
 1. rubyをinstall
 rubyをインストールします。
@@ -11,7 +13,7 @@ rubyをインストールします。
 termtterの実行ファイルは /usr/bin にあるようです。
 
 
-# 使い方
+= 使い方
 
 ほうって置くとhome_timelineが流れてきます。
 操作をするにはコマンドを入力。
@@ -51,7 +53,7 @@ STATUS_IDのかわりに@USENAMEとすると指定したユーザの最新のtwe
 TEXTは省略できます。省略すると空RTになります。
 
 
-# 設定
+= 設定
 
 設定は
 ~./.termtter/config
@@ -65,8 +67,4 @@ TEXTは省略できます。省略すると空RTになります。
 例：70秒更新にする場合
     config.update_interval = 70
 
-
-
-
-
-
+=end
